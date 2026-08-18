@@ -5,6 +5,16 @@ MDViewer 의 사용자 관점 변경 사항을 기록합니다.
 형식은 [Keep a Changelog](https://keepachangelog.com) 구조를 따르며, 버전 구간은 `v{버전}` git 태그 기준입니다.
 이 문서는 릴리스 도구(ReleaseTool)의 노트 확정 단계로 갱신됩니다 (`docs/release-guide.md` 참조).
 
+## [v1.2.1] - 2026-08-18
+
+### 변경
+
+- **관리자 권한 없이 설치됩니다** — 설치 위치가 사용자 폴더 안 `AppData\Local\Programs\SleighMaster\MDViewer` 로 바뀌었습니다. 설치·업데이트·제거가 관리자 권한 확인(UAC) 없이 진행됩니다. 기존 `Program Files` 설치본에서 업그레이드하면 옛 설치본을 제거하는 동안 권한 확인이 마지막으로 1회 뜹니다. 설정·최근 파일 같은 사용자 데이터와 바탕 화면·시작 메뉴 바로 가기는 그대로 유지됩니다.
+
+### 수정
+
+- 설치 중 위치를 직접 바꾸면 고른 폴더 아래에 `SleighMaster\MDViewer` 폴더가 만들어지지 않고 그 폴더에 바로 설치되던 문제를 고쳤습니다. 이제 고른 위치 아래 `SleighMaster\MDViewer` 폴더에 설치됩니다.
+
 ## [v1.2.0] - 2026-08-18
 
 ### 추가
